@@ -12,11 +12,11 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BNRPerson *edwin = [[BNRPerson alloc] init];
         
-        [edwin setHeightInMeters:1.8];
-        [edwin setWeightInKilos:96];
+        edwin.heightInMeters = 1.8;
+        edwin.weightInKilos = 96;
         
-        float height = [edwin heightInMeters];
-        int weight = [edwin weightInKilos];
+        float height = edwin.heightInMeters;
+        int weight = edwin.weightInKilos;
         NSLog(@"edwin is %.2f meters tall and weighs %d kilograms", height, weight);
         
         float bmi = [edwin bodyMassIndex];
