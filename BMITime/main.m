@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
         float height = edwin.heightInMeters;
         int weight = edwin.weightInKilos;
         NSLog(@"edwin is %.2f meters tall and weighs %d kilograms", height, weight);
-        NSLog(@"Employee %u hired on %@", edwin.employeeID, edwin.hireDate);
+        NSLog(@"%@ hired on %@", edwin, edwin.hireDate);
         
         float bmi = [edwin bodyMassIndex];
         double years = [edwin yearsOfEmployment];
