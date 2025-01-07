@@ -15,7 +15,10 @@ int main(int argc, const char * argv[]) {
         edwin.heightInMeters = 1.8;
         edwin.weightInKilos = 96;
         edwin.employeeID = 20;
-        edwin.hireDate = [NSDate dateWithNaturalLanguageString:@"Dec 23rd, 2024"];
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"yyyy-MM-dd";
+        edwin.hireDate = [dateFormatter dateFromString:@"2024-12-23"];
         
         float height = edwin.heightInMeters;
         int weight = edwin.weightInKilos;
