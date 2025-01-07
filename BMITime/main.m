@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BNRPerson.h"
+#import "BNREmployee.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        BNRPerson *edwin = [[BNRPerson alloc] init];
+        BNRPerson *edwin = [[BNREmployee alloc] init];
         
         edwin.heightInMeters = 1.8;
         edwin.weightInKilos = 96;
