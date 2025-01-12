@@ -12,9 +12,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BNREmployee : BNRPerson
-{
-    NSMutableArray *_assets;
-}
 
 @property (nonatomic) unsigned int employeeID;
 @property (nonatomic) NSDate *hireDate;
