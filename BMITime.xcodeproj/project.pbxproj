@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A556627E2D2DC283006446DD /* BNRAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = A556627D2D2DC283006446DD /* BNRAsset.m */; };
 		A56E43982D2C8A7500BE4A6C /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A56E43972D2C8A7500BE4A6C /* BNRPerson.m */; };
 		A56E43BB2D2CA92B00BE4A6C /* BNREmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = A56E43BA2D2CA92B00BE4A6C /* BNREmployee.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A556627C2D2DC283006446DD /* BNRAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAsset.h; sourceTree = "<group>"; };
+		A556627D2D2DC283006446DD /* BNRAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAsset.m; sourceTree = "<group>"; };
 		A56E438B2D2C89D400BE4A6C /* BMITime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BMITime; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56E43952D2C89E100BE4A6C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A56E43962D2C8A7500BE4A6C /* BNRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRPerson.h; sourceTree = "<group>"; };
@@ -54,6 +57,8 @@
 		A56E43822D2C89D400BE4A6C = {
 			isa = PBXGroup;
 			children = (
+				A556627C2D2DC283006446DD /* BNRAsset.h */,
+				A556627D2D2DC283006446DD /* BNRAsset.m */,
 				A56E43962D2C8A7500BE4A6C /* BNRPerson.h */,
 				A56E43B92D2CA92B00BE4A6C /* BNREmployee.h */,
 				A56E43BA2D2CA92B00BE4A6C /* BNREmployee.m */,
@@ -137,6 +142,7 @@
 			files = (
 				A56E43BB2D2CA92B00BE4A6C /* BNREmployee.m in Sources */,
 				A56E43982D2C8A7500BE4A6C /* BNRPerson.m in Sources */,
+				A556627E2D2DC283006446DD /* BNRAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

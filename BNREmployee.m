@@ -6,8 +6,39 @@
 //
 
 #import "BNREmployee.h"
+#import "BNRAsset.h"
 
 @implementation BNREmployee
+
+- (void)setAssets:(NSArray *)a
+{
+    _assets = [a mutableCopy];
+}
+
+- (NSArray *)assets
+{
+    return [_assets copy];
+}
+
+- (void)addAsset:(BNRAsset *)a
+{
+    if (!_assets) {
+        _assets = [NSMutableArray array];
+    }
+    
+    [_assets addObject:a];
+}
+
+- (unsigned int)valueOfAssets
+{
+    unsigned int sum = 0;
+    
+    for (BNRAsset *asset in _assets) {
+        sum += asset.resaleValue;
+    }
+    
+    return sum;
+}
 
 - (double)yearsOfEmployment
 {
