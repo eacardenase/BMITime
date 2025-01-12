@@ -61,7 +61,12 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<Employee %d>", self.employeeID];
+    return [NSString stringWithFormat:@"<Employee %u: $%u in assets>", self.employeeID, self.valueOfAssets];
+}
+
+- (void)dealloc
+{
+    NSLog(@"Deallocating %@", self);
 }
 
 @end
