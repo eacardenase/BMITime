@@ -12,6 +12,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSMutableArray *employees = [NSMutableArray array];
+        int luckyEmployeeIndex = 5;
         
         for (int i = 0; i < 10; i++) {
             BNREmployee *edwin = [[BNREmployee alloc] init];
@@ -39,9 +40,16 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Employees: %@", employees);
         
-        NSLog(@"Giving up ownership of one employee.");
+        BNREmployee *luckyEmployee = [employees objectAtIndex:luckyEmployeeIndex];
         
-        [employees removeObjectAtIndex:5];
+        NSLog(@"Lucky employee is %@", luckyEmployee);
+        NSLog(@"He has the following assets: %@", luckyEmployee.assets);
+        
+        [luckyEmployee removeAsset:luckyEmployee.assets[0]];
+        
+        NSLog(@"Giving up ownership of lucky employee.");
+        
+        [employees removeObjectAtIndex:luckyEmployeeIndex];
         
         NSLog(@"Giving up ownership of arrays.");
         

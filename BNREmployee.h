@@ -22,7 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSArray *assets;
 
 - (double)yearsOfEmployment;
-- (void)addAsset: (BNRAsset *)a;
+- (void)addAsset:(BNRAsset *)a;
+- (void)removeAsset:(BNRAsset *)a;
 - (unsigned int)valueOfAssets;
 
 @end
