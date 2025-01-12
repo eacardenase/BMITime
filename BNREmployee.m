@@ -8,6 +8,12 @@
 #import "BNREmployee.h"
 #import "BNRAsset.h"
 
+@interface BNREmployee ()
+
+@property (nonatomic) unsigned int officeAlarmCode;
+
+@end
+
 @implementation BNREmployee
 
 - (void)setAssets:(NSArray *)a
