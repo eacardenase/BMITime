@@ -10,7 +10,7 @@
 
 @interface BNREmployee ()
 {
-    NSMutableArray *_assets;
+    NSMutableSet *_assets;
 }
 
 @property (nonatomic) unsigned int officeAlarmCode;
@@ -19,12 +19,12 @@
 
 @implementation BNREmployee
 
-- (void)setAssets:(NSArray *)a
+- (void)setAssets:(NSSet *)a
 {
     _assets = [a mutableCopy];
 }
 
-- (NSArray *)assets
+- (NSSet *)assets
 {
     return [_assets copy];
 }
@@ -32,7 +32,7 @@
 - (void)addAsset:(BNRAsset *)a
 {
     if (!_assets) {
-        _assets = [NSMutableArray array];
+        _assets = [[NSMutableSet alloc] init];
     }
     
     [_assets addObject:a];
@@ -41,7 +41,7 @@
 
 - (void)removeAsset:(BNRAsset *)a
 {
-    if([_assets containsObject:a]) {
+    if(a != nil && [_assets containsObject:a]) {
         [_assets removeObject:a];
     }
 }

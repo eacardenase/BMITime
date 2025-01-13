@@ -49,7 +49,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Lucky employee is %@", luckyEmployee);
         NSLog(@"He has the following assets: %@", luckyEmployee.assets);
         
-        [luckyEmployee removeAsset:luckyEmployee.assets[0]];
+        [luckyEmployee removeAsset: [luckyEmployee.assets anyObject]];
         
         NSLog(@"Giving up ownership of lucky employee.");
         
