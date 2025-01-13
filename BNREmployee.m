@@ -36,6 +36,7 @@
     }
     
     [_assets addObject:a];
+    a.holder = self;
 }
 
 - (void)removeAsset:(BNRAsset *)a
