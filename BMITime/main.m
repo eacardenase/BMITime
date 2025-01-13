@@ -49,6 +49,11 @@ int main(int argc, const char * argv[]) {
             [allAssets addObject:asset];
         }
         
+        NSSortDescriptor *voaDesc = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets" ascending:YES];
+        NSSortDescriptor *eidDesc = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];
+        
+        [employees sortUsingDescriptors:@[voaDesc, eidDesc]];
+        
         NSLog(@"Employees: %@", employees);
         
         BNREmployee *luckyEmployee = [employees objectAtIndex:luckyEmployeeIndex];
